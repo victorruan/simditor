@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "simditor-fullscreen",
+        "scope": null,
+        "escapedName": "simditor-fullscreen",
+        "name": "simditor-fullscreen",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/victorruan/work/simditor/src"
+    ]
+  ],
+  "_from": "simditor-fullscreen@latest",
+  "_id": "simditor-fullscreen@0.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/simditor-fullscreen",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "name": "heroicyang",
+    "email": "me@heroicyang.com"
+  },
+  "_npmVersion": "2.7.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "simditor-fullscreen",
+    "scope": null,
+    "escapedName": "simditor-fullscreen",
+    "name": "simditor-fullscreen",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://registry.npmjs.org/simditor-fullscreen/-/simditor-fullscreen-0.1.1.tgz",
+  "_shasum": "faf0e8060b8173b63de20703f3995a99623df424",
+  "_shrinkwrap": null,
+  "_spec": "simditor-fullscreen",
+  "_where": "/Users/victorruan/work/simditor/src",
+  "author": {
+    "name": "HeroicYang",
+    "email": "yangxiong@mycolorway.com"
+  },
+  "bugs": {
+    "url": "https://github.com/heroicyang/simditor-fullscreen/issues"
+  },
+  "dependencies": {},
+  "description": "Add fullscreen support for Simditor.",
+  "devDependencies": {
+    "grunt": "0.x",
+    "grunt-contrib-coffee": "0.x",
+    "grunt-contrib-jasmine": "0.x",
+    "grunt-contrib-sass": "0.x",
+    "grunt-contrib-watch": "0.x",
+    "grunt-umd": "2.x"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "faf0e8060b8173b63de20703f3995a99623df424",
+    "tarball": "https://registry.npmjs.org/simditor-fullscreen/-/simditor-fullscreen-0.1.1.tgz"
+  },
+  "gitHead": "09336d316e65568f211e829892dacc287e9b7109",
+  "homepage": "https://github.com/heroicyang/simditor-fullscreen",
+  "keywords": [
+    "simditor",
+    "fullscreen"
+  ],
+  "main": "lib/simditor-fullscreen.js",
+  "maintainers": [
+    {
+      "name": "heroicyang",
+      "email": "me@heroicyang.com"
+    }
+  ],
+  "name": "simditor-fullscreen",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/heroicyang/simditor-fullscreen.git"
+  },
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
+  "version": "0.1.1"
+}

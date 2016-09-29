@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simditor-deresource</title>
+    <link rel="stylesheet" type="text/css" href="resource/simditor/site/assets/styles/simditor.css" />
+    <link rel="stylesheet" href="resource/simditor-fullscreen/styles/simditor-fullscreen.css" />
+    <script type="text/javascript" src="resource/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="resource/simple-module/lib/module.js"></script>
+    <script type="text/javascript" src="resource/simple-hotkeys/lib/hotkeys.js"></script>
+    <script type="text/javascript" src="resource/simple-uploader/lib/uploader.js"></script>
+    <script type="text/javascript" src="resource/simditor/lib/simditor.js"></script>
+    <script type="text/javascript" src="resource/simditor-fullscreen/lib/simditor-fullscreen.js"></script>
+</head>
+<body>
+<div>
+    <label for="title">新闻标题</label><input type="text" id="title" style="width: 100%" placeholder="请输入标题">
+</div>
+<br>
+<label for="editor">新闻内容(点击下面的文本编辑器,即可编辑)</label>
+<textarea id="editor" placeholder="请输入内容" autofocus></textarea><br>
+
+<input type="button" value="保存" style="width: 100%" id="save">
+<script>
+    var editor = new Simditor({
+        textarea: $('#editor'),
+        upload:{
+            url: 'upload.php',
+            params: null,
+            fileKey: 'upload_file',
+            connectionCount: 3,
+            leaveConfirm: 'Uploading is in progress, are you sure to leave this page?',
+        },
+        defaultImage: 'resource/simditor/site/assets/images/image.png',
+        imageButton:['upload'],
+        pasteImage:true,
+        toolbar:['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', 'ol', 'ul', 'blockquote', 'code', 'table', 'link', 'image', 'hr', 'indent', 'outdent', 'alignment','|', 'fullscreen']
+
+    });
+
+    hotkeys = simple.hotkeys();
+    hotkeys.add("ctrl + s", function(e){
+        console.log("ctrl + b pressed");
+    }).add("cmd + s", function(e){
+        console.log("Help");
+    });
+
+    editor.getValue();
+</script>
+</body>
+
+</html>
